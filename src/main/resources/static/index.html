@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Basic Banking System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🏦 Basic Banking System</h1>
+
+    <section>
+
+        <h2>Create Account</h2>
+
+        <input
+            type="text"
+            id="accountNumber"
+            placeholder="Account Number"
+        >
+
+        <input
+            type="text"
+            id="accountHolder"
+            placeholder="Account Holder"
+        >
+
+        <input
+            type="number"
+            id="initialBalance"
+            placeholder="Initial Balance"
+        >
+
+        <button onclick="createAccount()">
+            Create Account
+        </button>
+
+    </section>
+
+
+    <section>
+
+        <h2>Banking Operations</h2>
+
+        <input
+            type="text"
+            id="operationAccount"
+            placeholder="Account Number"
+        >
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Amount"
+        >
+
+        <button onclick="deposit()">
+            Deposit
+        </button>
+
+        <button onclick="withdraw()">
+            Withdraw
+        </button>
+
+        <button onclick="checkBalance()">
+            Check Balance
+        </button>
+
+        <button onclick="getTransactions()">
+            Transaction History
+        </button>
+
+    </section>
+
+
+    <div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
